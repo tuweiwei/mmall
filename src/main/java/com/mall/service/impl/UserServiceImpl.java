@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
  * Created by Administrator on 2017/7/19.
  */
 @Service("iUserService")
-public class UserService implements IUserService {
+public class UserServiceImpl implements IUserService {
 
     @Autowired
     private UserMapper userMapper;

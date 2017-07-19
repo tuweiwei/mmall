@@ -156,7 +156,6 @@
      SELECT COUNT(1) FROM mmall_user
      WHERE username = #{username}
 
-
   </select>
 
   <select id="selectLogin" resultMap="BaseResultMap" parameterType="map">
