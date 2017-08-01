@@ -1,13 +1,13 @@
 package com.mall.controller.backend;
 
 import com.github.pagehelper.PageInfo;
-import com.mmall.common.Const;
-import com.mmall.common.ResponseCode;
-import com.mmall.common.ServerResponse;
-import com.mmall.pojo.User;
-import com.mmall.service.IOrderService;
-import com.mmall.service.IUserService;
-import com.mmall.vo.OrderVo;
+import com.mall.common.Const;
+import com.mall.common.ResponseCode;
+import com.mall.common.ServerResponse;
+import com.mall.pojo.User;
+import com.mall.service.IOrderService;
+import com.mall.service.IUserService;
+import com.mall.vo.OrderVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

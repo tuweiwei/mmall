@@ -1,15 +1,15 @@
 package com.mall.controller.backend;
 
 import com.google.common.collect.Maps;
-import com.mmall.common.Const;
-import com.mmall.common.ResponseCode;
-import com.mmall.common.ServerResponse;
-import com.mmall.pojo.Product;
-import com.mmall.pojo.User;
-import com.mmall.service.IFileService;
-import com.mmall.service.IProductService;
-import com.mmall.service.IUserService;
-import com.mmall.util.PropertiesUtil;
+import com.mall.common.Const;
+import com.mall.common.ResponseCode;
+import com.mall.common.ServerResponse;
+import com.mall.pojo.Product;
+import com.mall.pojo.User;
+import com.mall.service.IFileService;
+import com.mall.service.IProductService;
+import com.mall.service.IUserService;
+import com.mall.util.PropertiesUtil;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
