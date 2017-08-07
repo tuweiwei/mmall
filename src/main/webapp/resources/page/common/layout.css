@@ -76,7 +76,7 @@ input[type='checkbox']{
      magin:10px auto;
     width:65px;
     height:65px;
-    //background: url("../../loading.gif") no-repeat;
+    /*background: url("../../loading.gif") no-repeat;*/
     opacity: .6;
 }
 

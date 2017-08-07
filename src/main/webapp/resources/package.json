@@ -4,16 +4,27 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "WEBPACK_ENV=dev webpack-dev-server --inline --port 8080",
+    "dev_win": "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8080",
+    "dist": "WEBPACK_ENV=online webpack -p",
+    "dist_win": "set WEBPACK_ENV=online && webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.11.2",
     "hogan": "^1.0.2",
+    "html-loader": "^0.5.0",
+    "html-webpack-plugin": "^2.30.1",
     "normalize.css": "^7.0.0",
+    "path": "^0.12.7",
     "style-loader": "^0.18.2",
-    "webpack": "^1.15.0"
+    "url-loader": "^0.5.9",
+    "webpack": "^1.15.0",
+    "webpack-dev-server": "^1.16.5"
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
