@@ -73,10 +73,13 @@ input[type='checkbox']{
     padding:0 10px;
 }
 .loading{
-     magin:10px auto;
+    display:block;
+    width:100px;
+    height:100px;
+    magin:10px auto;
     width:65px;
     height:65px;
-    /*background: url("../../loading.gif") no-repeat;*/
+    background: url("../../imgs/icon/loading.gif") no-repeat;
     opacity: .6;
 }
 

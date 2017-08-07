@@ -1,7 +1,7 @@
 /**
  * Created by Administrator on 2017/8/1.
  */
-var Hogan = require('hogan');
+var Hogan = require('hogan.js');
 var conf = {
 
     serverHost : ''

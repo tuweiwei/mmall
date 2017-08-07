@@ -16,7 +16,7 @@
     margin-right:5px;
 }
 
-.nav .nav-list .item{
-    display: inline-block;
+.nav .nav-list .item{;
     margin-left: 5px;
+    display: inline-block
 }
