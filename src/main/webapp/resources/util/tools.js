@@ -8,11 +8,11 @@ var conf = {
 };
 var m = {
    doLogin: function () {
-       window.location.href = './login.html?redirect='+ encodeURIComponent(window.location.href);
+       window.location.href = './user-login.html?redirect='+ encodeURIComponent(window.location.href);
    } ,
 
     //获取服务器地址
-    getUrl : function (path) {
+    getServerUrl : function (path) {
         return conf.serverHost+path;
     },
 
@@ -40,8 +40,8 @@ var m = {
     validate : function (value , type) {
        var val = $.trim(value);
        switch(type){
-           case 'required':
-               return !!value;
+           case 'require':
+               return !!val;
                break;
            case 'phone':
                return /^1\d{10}$/.test(value);

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "WEBPACK_ENV=dev webpack-dev-server --inline --port 8080",
-    "dev_win": "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8080",
+    "dev": "WEBPACK_ENV=dev webpack-dev-server --inline --port 8081",
+    "dev_win": "set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8081",
     "dist": "WEBPACK_ENV=online webpack -p",
     "dist_win": "set WEBPACK_ENV=online && webpack -p",
     "test": "echo \"Error: no test specified\" && exit 1"

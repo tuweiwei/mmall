@@ -19,19 +19,20 @@ var getHtmlConfig = function (name,title) {
 }
 var config= {
     entry: {
-        'common':             ['./page/common/index.js'],
-        'index':              ['./page/index/index.js'],
-        'login':              ['./page/login/index.js'],
-        'list'              : ['./page/list/index.js'],
-        'detail'            : ['./page/detail/index.js'],
-        'cart'              : ['./page/cart/index.js'],
-        'user-login'        : ['./page/user-login/index.js'],
+        common:             ['./page/common/index.js'],
+        index:              ['./page/index/index.js'],
+        login:              ['./page/login/index.js'],
+        list              : ['./page/list/index.js'],
+        detail            :  ['./page/detail/index.js'],
+        cart              :  ['./page/cart/index.js'],
+        'user-login'       : ['./page/user-login/index.js'],
         'user-register'     : ['./page/user-register/index.js'],
         'user-pass-reset'   : ['./page/user-pass-reset/index.js'],
         'user-center'       : ['./page/user-center/index.js'],
         'user-center-update': ['./page/user-center-update/index.js'],
         'user-pass-update'  : ['./page/user-pass-update/index.js'],
-        'result'            : ['./page/result/index.js'],
+          result            : ['./page/result/index.js']
+
     },
     output: {
         path: path.resolve(__dirname,'dist'),
@@ -84,7 +85,7 @@ var config= {
 };
 
 if('dev' === WEBPACK_ENV){
-    config.entry.common.push('webpack-dev-server/client?http://localhost:8080/');
+    config.entry.common.push('webpack-dev-server/client?http://localhost:8081/');
 }
 
 
