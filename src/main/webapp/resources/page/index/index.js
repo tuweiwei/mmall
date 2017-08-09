@@ -3,10 +3,10 @@
  */
 require('page/common/nav/index.js');
 require('page/common/header/index.js');
-var nav = require('page/common/nav-side/index.js');
+var navside = require('page/common/nav-side/index.js');
 var __m = require('util/tools.js');
 require('./index.css');
 
-nav.init({
+navside.init({
     name : 'modify-password',
 });

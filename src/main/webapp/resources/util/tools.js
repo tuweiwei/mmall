@@ -75,11 +75,11 @@ var m = {
                    __this.doLogin();
 
                }else if(1 === res.status){
-                   typeof  param.success === 'function' && param.error(res.msg);
+                   typeof  param.error === 'function' && param.error(res.msg);
                }
            },
            error:function (err) {
-               typeof  param.success === 'function' && param.error(err.statusText);
+               typeof  param.error === 'function' && param.error(err.statusText);
            },
 
        });

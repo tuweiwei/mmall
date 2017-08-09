@@ -179,7 +179,7 @@
 
   </select>
   <select id="selectQuestionByUsername" resultType="java.lang.String" parameterType="string">
-     SELECT qestion
+     SELECT question
      FROM mmall_user
      WHERE username=#{username}
 
