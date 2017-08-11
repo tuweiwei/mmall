@@ -11,6 +11,7 @@ var getHtmlConfig = function (name,title) {
 
         template: './view/'+ name +'.html',
         filename: 'html/'+name+'.html',
+        favicon :  './favicon.ico',
         inject: true,
         hash: true,
         chunks: ['common',name],
@@ -36,7 +37,7 @@ var config= {
     },
     output: {
         path: path.resolve(__dirname,'dist'),
-        publicPath: '/dist',
+        publicPath: 'dev' === WEBPACK_ENV?'/dist/':'//s.tuweiwei.xyz/mall/dist/',
         filename: 'js/[name].js'
     },
     resolve : {
@@ -76,7 +77,14 @@ var config= {
                 test: /\.css$/,
                 loader:  ExtractTextPlugin.extract( 'style-loader','css-loader')
             },
-            { test: /\.string$/, loader: 'html-loader'},
+            {
+                test: /\.string$/,
+                loader: 'html-loader',
+                query:{
+                    minimize:true,
+                    removeAttributeQuotes:false
+                }
+            },
             { test: /\.(gif|png|jpg|woff|svg|eot|ttf)\??.*$/, loader: 'url-loader?limit=100&name=images/[name].[ext]' },
         ],
     }

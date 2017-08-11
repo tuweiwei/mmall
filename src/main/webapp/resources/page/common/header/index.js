@@ -9,10 +9,12 @@ var __mm = require('util/tools.js');
 
 var header = {
     init : function () {
+        this.onLoad();
         this.bindEvent();
+
     },
     onLoad : function () {
-        var keyword = __.getUrlParam('keyword');
+        var keyword = __mm.getUrlParam('keyword');
         if(keyword){
              $('#search-input').val(keyword);
         }

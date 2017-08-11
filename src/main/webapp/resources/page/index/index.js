@@ -5,11 +5,14 @@ require('page/common/nav/index.js');
 require('page/common/header/index.js');
 var navside = require('page/common/nav-side/index.js');
 var __m = require('util/tools.js');
+require('util/slider/index.js');
+var templateBanner = require('./banner.string');
+
 require('./index.css');
 
 $(function() {
     // 渲染banner的html
-    var bannerHtml  = _mm.renderHtml(templateBanner);
+    var bannerHtml  = __m.renderHtml(templateBanner);
     $('.banner-con').html(bannerHtml);
     // 初始化banner
     var $slider     = $('.banner').unslider({
