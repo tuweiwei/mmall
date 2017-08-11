@@ -21,7 +21,11 @@
     from mmall_cart
     where id = #{id,jdbcType=INTEGER}
   </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    <select id="selectCheckedCartByUserId" resultType="com.mall.pojo.Cart">
+
+
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from mmall_cart
     where id = #{id,jdbcType=INTEGER}
   </delete>
